@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMMUNITY discord von NthPace1077985</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #2c2f33;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #23272a;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+            border-bottom: 2px solid #5865F2;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: .2s;
+        }
+
+        nav a:hover {
+            color: #5865F2;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+            animation: fadein 1s ease;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #5865F2;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: .2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #5865F2;
+        }
+
+        /* CARDS */
+        .card {
+            background: #23272a;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #5865F2;
+            margin-bottom: 20px;
+        }
+
+        /* TEAM GRID */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .team-card {
+            background: #23272a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: .3s;
+        }
+
+        .team-card:hover {
+            transform: scale(1.05);
+            border-color: #5865F2;
+        }
+
+        /* FAQ */
+        .faq-q {
+            width: 100%;
+            padding: 10px;
+            background: #5865F2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .faq-a {
+            display: none;
+            background: #2c2f33;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            border-radius: 8px;
+            transition: .3s;
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #23272a;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Über uns</a>
+        <a href="#rules">Regeln</a>
+        <a href="#team">Team</a>
+        <a href="#faq">FAQ</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <!-- STARTSEITE -->
+    <section id="home">
+        <h1>Willkommen bei NthPace1077985's Community!</h1>
+        <p>Trete unserer freundlichen Discord-Community bei und chatte, spiele und tausche dich aus!</p>
+        <br>
+        <a class="btn" href="https://discord.gg/K29JzUzytW" target="_blank">Jetzt beitreten</a>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section id="about">
+        <h2>Über uns</h2>
+        <div class="card">
+            <p>NthPace1077985's Community ist eine freundliche Discord-Community für Gaming, Chat und Events. Jeder ist
+                willkommen
+                – egal ob Anfänger oder Profi!</p>
+        </div>
+    </section>
+
+    <!-- REGELN -->
+    <section id="rules">
+        <h2>Regeln</h2>
+        <div class="card"><strong>1.</strong> Sei respektvoll zu allen Mitgliedern.</div>
+        <div class="card"><strong>2.</strong> Keine Beleidigungen oder Mobbing.</div>
+        <div class="card"><strong>3.</strong> Keine Werbung ohne Erlaubnis.</div>
+        <div class="card"><strong>4.</strong> Halte dich an die Discord TOS.</div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+        <h2>Unser Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <h3>Jack</h3>
+                <p>SERVERLEITUNG</p>
+            </div>
+            <div class="team-card">
+                <h3>jakoomaax</h3>
+                <p>SERVERLEITUNG</p>
+            </div>
+            <div class="team-card">
+                <h3>Felix</h3>
+                <p>SERVERLEITUNG</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <h2>FAQ</h2>
+        <button class="faq-q">Wie trete ich bei?</button>
+        <div class="faq-a">Klicke auf den Invite-Button oben, um unserem Discord-Server beizutreten!</div>
+
+        <button class="faq-q">Gibt es Regeln?</button>
+        <div class="faq-a">Ja, bitte lese die Regeln im Abschnitt "Regeln".</div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200x120">
+            <img src="https://via.placeholder.com/200x120">
+            <img src="https://via.placeholder.com/200x120">
+            <img src="https://via.placeholder.com/200x120">
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events">
+        <h2>Next Event</h2>
+        <p>Countdown: <span id="countdown"></span></p>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <div class="card">
+            <p>Bei Fragen oder Problemen erreichst du mich unter:</p>
+            <p><strong>Email:</strong> NthPlace1077985@posteo.de</p>
+            <p><strong>Discord:</strong> Schreibe einem Moderator</p>
+        </div>
+    </section>
+
+    <footer>
+        © <span id="year"></span>Discord Server – Alle Rechte vorbehalten
+    </footer>
+
+    <script>
+        // Jahr automatisch
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // FAQ Akkordeon
+        document.querySelectorAll('.faq-q').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const a = btn.nextElementSibling;
+                a.style.display = a.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Countdown
+        const eventDate = new Date("2025-12-25T18:00:00").getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = eventDate - now;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const sec = Math.floor((diff % (1000 * 60)) / 1000);
+            document.getElementById('countdown').innerText = `${days}d ${hours}h ${min}m ${sec}s`;
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
